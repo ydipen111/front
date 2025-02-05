@@ -15,7 +15,8 @@ export function Header() {
   return (
     <div className="bg-orange sticky top-0 z-50">
       {/* Navbar: Login and Signup */}
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col text-end">
+        {/* logo */}
         <div className="relative pt-2 px-[10%] flex flex-row justify-between items-start font-sans text-white">
           <Typography
             onClick={() => nav("/")}
@@ -27,9 +28,9 @@ export function Header() {
           </Typography>
 
           <div className="flex flex-row gap-3 items-start text-md">
-            <div className="px-3">SAVE MORE ON APP</div>
-            <div className="px-3">BECOME A SELLER</div>
-            <div className="px-3">HELP AND SUPPORT</div>
+            <div className="px-3">Save more on app</div>
+            <div className="px-3">Become a best seler</div>
+            <div className="px-3">Help and</div>
             <div className="px-3">
               {user ? (
                 <ProfileMenu user={user} />
